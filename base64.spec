@@ -2,7 +2,7 @@ Summary:	Encode and decode base64 files
 Summary(pl):	Kodowanie i dekodowanie plików base64
 Name:		base64
 Version:	1.3
-Release:	1
+Release:	2
 License:	Public Domain
 Group:		Applications
 Source0:	http://www.fourmilab.ch/webtools/%{name}/%{name}-%{version}.tar.gz
