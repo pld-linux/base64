@@ -1,5 +1,5 @@
 Summary:	Encode and decode base64 files
-Summary(pl):	(De)szyfruje pliki base64
+Summary(pl):	Kodowanie i dekodowanie plików base64
 Name:		base64
 Version:	1.3
 Release:	1
@@ -7,7 +7,8 @@ License:	Public Domain
 Group:		Applications
 Source0:	http://www.fourmilab.ch/webtools/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	66d81725ba4d03227af2ce3792e50d5d
-URL:		http://www.fourmilab.ch/webtools/base64
+URL:		http://www.fourmilab.ch/webtools/base64/
+BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -17,10 +18,10 @@ decoding filter, and is most commonly used in this manner as part of
 an automated mail processing system.
 
 %description -l pl
-base64 to narzêdzie konsolowe s³u¿±ce do szyfrowania i deszyfrowania
+base64 to narzêdzie konsolowe s³u¿±ce do kodowania i dekodowania
 plików w tym formacie. Mo¿e byæ u¿ywane w potokach jako filtr
-(de)szyfruj±cy i jest w ten sposób u¿ywany w systemach automatycznego
-przetwarzania poczty.
+(de)koduj±cy i jest zwykle w ten sposób u¿ywane w systemach
+automatycznego przetwarzania poczty.
 
 %prep
 %setup -q
@@ -32,7 +33,6 @@ przetwarzania poczty.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,%{_pixmapsdir}}
 
 install base64 $RPM_BUILD_ROOT%{_bindir}
