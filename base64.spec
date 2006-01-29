@@ -1,12 +1,12 @@
 Summary:	Encode and decode base64 files
 Summary(pl):	Kodowanie i dekodowanie plików base64
 Name:		base64
-Version:	1.3
-Release:	3
+Version:	1.4
+Release:	1
 License:	Public Domain
 Group:		Applications
 Source0:	http://www.fourmilab.ch/webtools/%{name}/%{name}-%{version}.tar.gz
-# Source0-md5:	66d81725ba4d03227af2ce3792e50d5d
+# Source0-md5:	77f0ff05296e1bd446ff02cea279309a
 URL:		http://www.fourmilab.ch/webtools/base64/
 BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -37,14 +37,14 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,%{_pixmapsdir}}
 
 install base64 $RPM_BUILD_ROOT%{_bindir}
 install base64.1 $RPM_BUILD_ROOT%{_mandir}/man1
-install b64.gif $RPM_BUILD_ROOT%{_pixmapsdir}
+install b64.png	$RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README index.html rfc1341* base64.pdf
+%doc README index.html rfc1341* base64.pdf log.txt
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
 %{_pixmapsdir}/*
