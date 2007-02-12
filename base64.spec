@@ -1,5 +1,5 @@
 Summary:	Encode and decode base64 files
-Summary(pl.UTF-8):   Kodowanie i dekodowanie plików base64
+Summary(pl.UTF-8):	Kodowanie i dekodowanie plików base64
 Name:		base64
 Version:	1.4
 Release:	1
