@@ -1,5 +1,5 @@
 Summary:	Encode and decode base64 files
-Summary(pl):	Kodowanie i dekodowanie plików base64
+Summary(pl.UTF-8):   Kodowanie i dekodowanie plikÃ³w base64
 Name:		base64
 Version:	1.4
 Release:	1
@@ -17,10 +17,10 @@ this format. It can be used within a pipeline as an encoding or
 decoding filter, and is most commonly used in this manner as part of
 an automated mail processing system.
 
-%description -l pl
-base64 to narzêdzie konsolowe s³u¿±ce do kodowania i dekodowania
-plików w tym formacie. Mo¿e byæ u¿ywane w potokach jako filtr
-(de)koduj±cy i jest zwykle w ten sposób u¿ywane w systemach
+%description -l pl.UTF-8
+base64 to narzÄ™dzie konsolowe sÅ‚uÅ¼Ä…ce do kodowania i dekodowania
+plikÃ³w w tym formacie. MoÅ¼e byÄ‡ uÅ¼ywane w potokach jako filtr
+(de)kodujÄ…cy i jest zwykle w ten sposÃ³b uÅ¼ywane w systemach
 automatycznego przetwarzania poczty.
 
 %prep
