@@ -1,12 +1,12 @@
 Summary:	Encode and decode base64 files
 Summary(pl.UTF-8):	Kodowanie i dekodowanie plików base64
 Name:		base64
-Version:	1.4
+Version:	1.5
 Release:	1
 License:	Public Domain
 Group:		Applications
 Source0:	http://www.fourmilab.ch/webtools/%{name}/%{name}-%{version}.tar.gz
-# Source0-md5:	77f0ff05296e1bd446ff02cea279309a
+# Source0-md5:	3e6a217ba2c60372156c212dadce1275
 URL:		http://www.fourmilab.ch/webtools/base64/
 BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
